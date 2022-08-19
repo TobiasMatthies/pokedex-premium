@@ -1,0 +1,147 @@
+.pointer {
+    cursor: pointer;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.gray {
+    color: #868686;
+}
+
+.grass {
+    background-color: #85e4c0;
+}
+
+.fire {
+    background-color: #f0864a;
+}
+
+.water {
+    background-color: #85b4e4;
+}
+
+.bug {
+    background-color: #79e379;
+}
+
+.normal {
+    background-color: #c9c9b5;
+}
+
+.poison {
+    background-color: #a459bb;
+}
+
+.electric {
+    background-color: #e4ea69;
+}
+
+.ground {
+    background-color: #a9ae4f;
+}
+
+.fairy {
+    background-color: #fca1ef;
+}
+
+.fighting {
+    background-color: #f86666;
+}
+
+.psychic {
+    background-color: #cc2fb4;
+}
+
+.rock {
+    background-color: #bcb065;
+}
+
+.ghost {
+    background-color: #9746af;
+}
+
+.ice {
+    background-color: #3bb2dd;
+}
+
+.dragon {
+    background-color: #694ae5;
+}
+
+.dark {
+    background-color: #2a2c35;
+}
+
+.steel {
+    background-color: #7db9cec7;
+}
+
+.flying {
+    background-color: #d76aed;
+}
+
+.green_bar {
+    background-color: #15a53b;
+}
+
+.red_bar {
+    background-color: #f54b4b;
+}
+
+.hp {
+    background-color: rgb(21, 165, 59);
+}
+
+.hp_shadow {
+    background-color: rgb(12, 220, 67);
+}
+
+.attack {
+    background-color: rgb(243, 33, 33);
+}
+
+.attack_shadow {
+    background-color: rgb(241, 92, 92);
+}
+
+.defense {
+    background-color: rgb(26, 92, 185);
+}
+
+.defense_shadow {
+    background-color: rgb(34, 121, 241);
+}
+
+.sp_atk {
+    background-color: rgb(212, 27, 110);
+}
+
+.sp_atk_shadow {
+    background-color: rgb(248, 67, 149);
+}
+
+.sp_def {
+    background-color: rgb(101, 38, 190);
+}
+
+.sp_def_shadow {
+    background-color: rgb(139, 68, 239);
+}
+
+.speed {
+    background-color: rgb(242, 124, 13);
+}
+
+.speed_shadow {
+    background-color: rgb(225, 144, 89);
+}
+
+.total {
+    background-color: rgb(28, 21, 165);
+}
+
+.total_shadow {
+    background-color: rgb(76, 68, 230);
+}
