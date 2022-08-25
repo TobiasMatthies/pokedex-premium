@@ -1,7 +1,7 @@
 function templatePokemonContainer(index) {
     return `<div class="singlePokemonWrapper">
     <div class="singlePokemonHeader">1 Bisasam</div>
-    <div onclick="openSection('detail'), initDetail(${index})" class="wrapper">
+    <div onclick="openSection('detail', ${index})" class="wrapper">
         <div class="lightCircle"></div>
         <div class="innerCircle1"></div>
         <div class="innerCircle2"></div>

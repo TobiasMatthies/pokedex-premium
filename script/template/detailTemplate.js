@@ -11,7 +11,7 @@
     <img onclick="openSection('detail')" class="close_icon pointer" id="close${i}" src="./img/close.svg">
     <div class="left_container">
         <div class="pokemon_info_general" id="pokemon_info_general${i}">
-            <h2 id="main_heading">#${number} ${pokemon['name']}</h2>
+            <h2 id="main_heading">#${i + 1} ${pokemon['name']}</h2>
         </div>
         <img class="pokemon_image" id="pokemon_image${i}" src="${pokemon['sprites']['other']['dream_world']['front_default']}">
     </div>

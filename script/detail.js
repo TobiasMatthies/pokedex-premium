@@ -1,6 +1,5 @@
 let pokemon;
 let image;
-let number = 3;
 
 
 async function initDetail(i) {
@@ -10,7 +9,7 @@ async function initDetail(i) {
 
 
 async function loadPokemons(i) {
-    let url = `https://pokeapi.co/api/v2/pokemon/${i}/`;
+    let url = `https://pokeapi.co/api/v2/pokemon/${i + 1}/`;
     let response = await fetch(url);
     let responseAsJson = await response.json();
     console.log(responseAsJson);
@@ -19,6 +18,7 @@ async function loadPokemons(i) {
 
 
 function renderPokemon(i) {
+    document.getElementById('body').innerHTML = '';
     document.getElementById('body').innerHTML += cardTemplate(i);
 }
 
