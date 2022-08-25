@@ -19,19 +19,33 @@
     <script src="script/main.js"></script>
 </head>
 
-<body onload="loadPokemons()">
-    <div id="body">
+<body>
 
+    <div id="landing_section" class="landing_section open_section">
+        <button onclick="openSection('detail')">detail</button>
+        <button onclick="openSection('pokemonList')">Pkm list</button>
+        landing
     </div>
 
-
-    <div class="allPokemonList">
-        <div id="imgWrapper" class="pkmWrapper">
-            <img alt="back" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png" srcset="">
-            <img alt="front" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" srcset="">
+    <div id="pokemonList_section" class="pokemonList_section">
+        <button onclick="openSection('pokemonList')">close</button>
+        <div class="allPokemonList">
+            <div id="imgWrapper" class="pkmWrapper">
+                <img alt="back"
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png" srcset="">
+                <img alt="front" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
+                    srcset="">
+            </div>
+            <button onclick="renderNextPokemons()">asdasd</button>
+            <div class="allPokemonWrapper" id="content"></div>
         </div>
-        <button onclick="renderNextPokemons()">asdasd</button> 
-        <div class="allPokemonWrapper" id="content"></div>
+    </div>
+
+    <div id="detail_section" class="detail_section">
+        <button onclick="openSection('detail')">close</button>
+        <div id="body">
+            asdasd
+        </div>
     </div>
 
 </body>

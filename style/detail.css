@@ -1,22 +1,4 @@
-body {
-    margin: 0;
-    width: calc(100vw - (100vw - 100%));
-    min-height: 100vh;
-    font-family: 'Open-sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #0d0f19;
-    overflow-x: hidden;
-}
 
-#body {
-    height: 100vh;
-    width: 100vw;
-    max-width: 100%;
-    box-sizing: border-box;
-}
 
 .card {
     padding: 20px;
