@@ -15,13 +15,9 @@ async function loadPokemons() {
     let responseAsJson = await response.json();
     console.log(responseAsJson);
     pokemon = responseAsJson;
-    renderPokemons();
 }
 
-/**
- * 
- * this function renders pokemons, starting at the value of "start", until getting to the value of "end". The difference between those variables is always 20.
- */
+
 function renderPokemons() {
     document.getElementById('body').innerHTML += cardTemplate(number);
 }
