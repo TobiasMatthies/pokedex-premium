@@ -15,7 +15,6 @@ async function loadPokemons() {
     let responseAsJson = await response.json();
     console.log(responseAsJson);
     pokemon = responseAsJson;
-    renderPokemons();
 }
 
 /**
