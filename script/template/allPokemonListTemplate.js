@@ -1,12 +1,16 @@
 function templatePokemonContainer(index) {
     return `<div class="singlePokemonWrapper">
-    <div class="singlePokemonHeader">1 Bisasam</div>
+    <div class="singlePokemonHeader" id="pkmNameBox_${index}">loading</div>
     <div class="wrapper">
         <div class="lightCircle"></div>
         <div class="innerCircle1"></div>
         <div class="innerCircle2"></div>
-        <div class="pokemonContent" id="pkmContentBox_${index}">
+        <div class="pokemonContent" id="pkmImgBox_${index}">
         </div>
     </div>
 </div>`;
+}
+
+function templatePokemonContainerInnerContent(index) {
+    return `<img src="${allPokemon[index].img}" alt=""  >`;
 }
