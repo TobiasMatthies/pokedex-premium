@@ -44,8 +44,6 @@
 }
 
 .pokemon_image {
-    height: 35vw;
-    width: 35vw;
     object-fit: contain;
 }
 
@@ -167,4 +165,57 @@
 .stat_value {
     position: absolute;
     right: 0;
+}
+
+.pkmWrapperDetail{
+    margin-bottom: -100px;
+    height: 35vw;
+    width: 35vw;
+    position: relative;
+}
+
+.pkmWrapperDetail img{
+    height: 35vw;
+    width: 35vw;
+    cursor: pointer;
+    background-color: #0d0f19;
+    position: absolute;
+}
+
+.pkmWrapperDetail img:nth-child(1){
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition:  transform 200ms ease-in;
+}
+
+
+
+.pkmWrapperDetail img:nth-child(2){
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition:  transform 400ms ease-out 200ms;
+}
+
+
+
+.pkmWrapperDetail:hover{
+    height: 35vw;
+    width: 35vw;
+    position: relative;
+}
+
+.pkmWrapperDetail:hover img{
+    height: 35vw;
+    width: 35vw;
+    position: absolute;
+}
+
+.pkmWrapperDetail:hover img:nth-child(1){
+    transform: rotate3d(0, 1, 0, 0deg) ;
+    transition:  transform 400ms ease-out 200ms;
+    
+}
+
+.pkmWrapperDetail:hover img:nth-child(2){
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition:  transform 200ms ease-in;
+    
 }

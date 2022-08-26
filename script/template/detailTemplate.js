@@ -13,7 +13,10 @@
         <div class="pokemon_info_general" id="pokemon_info_general${i}">
             <h2 id="main_heading">#${i + 1} ${pokemon['name']}</h2>
         </div>
-        <img class="pokemon_image" id="pokemon_image${i}" src="${pokemon['sprites']['other']['dream_world']['front_default']}">
+        <div class="pkmWrapperDetail">
+          <img class="pokemon_image" id="pokemon_image${i}" src="${pokemon['sprites']['back_default']}">
+          <img class="pokemon_image" id="pokemon_image${i}" src="${pokemon['sprites']['front_default']}">
+        </div>
     </div>
 
 
