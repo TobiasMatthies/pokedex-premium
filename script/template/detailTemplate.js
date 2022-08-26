@@ -8,10 +8,10 @@
  function cardTemplate(i) { //Reihe 1: der Back
     return /*html*/`
 <div class="card" id="pokemon${i}">
-    <img class="close_icon pointer" id="close${i}" src="./img/close.svg">
+    <img onclick="openSection('detail')" class="close_icon pointer" id="close${i}" src="./img/close.svg">
     <div class="left_container">
         <div class="pokemon_info_general" id="pokemon_info_general${i}">
-            <h2 id="main_heading">#${number} ${pokemon['name']}</h2>
+            <h2 id="main_heading">#${i + 1} ${pokemon['name']}</h2>
         </div>
         <img class="pokemon_image" id="pokemon_image${i}" src="${pokemon['sprites']['other']['dream_world']['front_default']}">
     </div>
@@ -95,7 +95,7 @@
 
             <div class="stat_container">
                 <div class="stat_bar_container">
-                    <span class="stat_value">${pokemon['stats'][0]['base_stat']}</span>
+                    <span class="stat_value">${(pokemon['stats'][0]['base_stat'] + pokemon['stats'][1]['base_stat'] + pokemon['stats'][2]['base_stat'] + pokemon['stats'][3]['base_stat'] + pokemon['stats'][4]['base_stat'] + pokemon['stats'][5]['base_stat'])}</span>
                     <div class="stat_bar_shadow total_shadow" id="total_bar${i}">
                         <div class="stat_bar total"></div>
                         <span class="stat_span">total</span>

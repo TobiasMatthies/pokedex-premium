@@ -58,4 +58,12 @@ function renderPokemonContainerInnerContent(index) {
     contentContainer.innerHTML = `${allPokemon[index].id}  ${allPokemon[index].name}`;
     let contentImgContainer = document.getElementById(`pkmImgBox_${index}`);
     contentContainer.innerHTML = templatePokemonContainerInnerContent(index);
+
 }
+
+
+function templatePokemonContainerInnerContent(index) {
+    return `<img src="${allPokemon[index]['sprites']['front_default']}" alt=""  >`;
+}
+
+
