@@ -10,7 +10,7 @@ function cardTemplate(i) { //Reihe 1: der Back
 <div class="card" id="pokemon$">
     <img onclick="openSection('detail')" class="close_icon pointer" id="close" src="./img/close.svg">
     <div class="left_container">
-        <div class="description_container">
+        <div class="dflex_column description_container">
             <h2 id="main_heading">#${i + 1} ${pokemon['name']}</h2>
             <div class="description" id="description"></div>
         </div>
@@ -104,4 +104,37 @@ function cardTemplate(i) { //Reihe 1: der Back
         </div>
 </div>
          `;
+}
+
+
+function infoTableTemplate() {
+    return /*html*/ `
+    <table class="pokemon_info_table">
+        <tr>
+            <td>
+                <h5>height</h5>
+                <span>${height}</span>
+            </td>
+            <td>
+                <h5>category</h5>
+                <span>${category}</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h5>weight</h5>
+                <span>${weight}</span>
+            </td>
+            <td>
+                <h5>abilities</h5>
+
+                <div class="dflex_column">
+                    <span>${abilities[0]['ability']['name']}</span>
+                    <span>show all</span>
+                </div>
+            </td>
+        </tr>
+    </table>
+    `
 }

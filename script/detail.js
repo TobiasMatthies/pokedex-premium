@@ -41,7 +41,7 @@ async function loadSpecies(i) {
 
 function getInfo() {
     description = species['flavor_text_entries'][0]['flavor_text'];
-    height = pokemon[height];
+    height = pokemon['height'];
     category = species['genera'][7]['genus'];
     weight = pokemon['weight'];
     abilities = pokemon['abilities'];
@@ -51,7 +51,7 @@ function getInfo() {
 function renderPokemon(i) {
     document.getElementById('body').innerHTML = '';
     document.getElementById('body').innerHTML += cardTemplate(i);
-     document.getElementById('description').innerHTML = '';
     document.getElementById('description').innerHTML = description;
+    document.getElementById('pokemon_info').innerHTML = infoTableTemplate();
 }
 

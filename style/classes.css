@@ -6,6 +6,11 @@
     display: none !important;
 }
 
+.dflex_column {
+    display: flex;
+    flex-direction: column;
+}
+
 .gray {
     color: #868686;
 }
