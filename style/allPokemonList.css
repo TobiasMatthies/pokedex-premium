@@ -1,7 +1,16 @@
 
 .allPokemonWrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     flex-wrap: wrap;
     display: flex;
+    gap: 16px;
+    justify-content: center;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .singlePokemonWrapper{
@@ -25,6 +34,8 @@
     width: 250px;
     cursor: pointer;
     border-radius: 15px;
+    background-color: rgba(250,250,250,0.05);
+    
 }
 
 .wrapper:hover {
@@ -201,4 +212,78 @@
     100% {
         -webkit-transform: rotate(-360deg);
     }
+}
+
+
+
+
+.pkmWrapper{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.pkmWrapper img{
+    cursor: pointer;
+    background-color: #0d0f19;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.pkmWrapper img:nth-child(1){
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition:  transform 200ms ease-in;
+}
+
+
+
+.pkmWrapper img:nth-child(2){
+    transform: rotate3d(0, 1, 0, 0deg);
+    transition:  transform 400ms ease-out 200ms;
+}
+
+
+
+.pkmWrapper:hover{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.pkmWrapper:hover img{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+}
+
+.pkmWrapper:hover img:nth-child(1){
+    transform: rotate3d(0, 1, 0, 0deg) ;
+    transition:  transform 400ms ease-out 200ms;
+    
+}
+
+.pkmWrapper:hover img:nth-child(2){
+    transform: rotate3d(0, 1, 0, 90deg);
+    transition:  transform 200ms ease-in;
+    
+}
+
+
+.page_nav_wrapper{
+    width: 100%;
+}
+
+.searchbar_wrapper{
+    width: 100%;
+    height: 50px;
+}
+
+.pokemon_list_content_wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.allPokemonList{
+    height: 90%;
 }

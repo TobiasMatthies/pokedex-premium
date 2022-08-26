@@ -12,5 +12,5 @@ function templatePokemonContainer(index) {
 }
 
 function templatePokemonContainerInnerContent(index) {
-    return `<img src="${allPokemon[index].img}" alt=""  >`;
+    return `<img src="${filteredPokemon[index].img}" alt=""  >`;
 }
