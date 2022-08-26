@@ -1,7 +1,16 @@
 
 .allPokemonWrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     flex-wrap: wrap;
     display: flex;
+    gap: 16px;
+    justify-content: center;
+    height: 100%;
+    overflow-y: scroll;
 }
 
 .singlePokemonWrapper{
@@ -25,6 +34,8 @@
     width: 250px;
     cursor: pointer;
     border-radius: 15px;
+    background-color: rgba(250,250,250,0.05);
+    
 }
 
 .wrapper:hover {
@@ -259,7 +270,23 @@
 }
 
 
+.page_nav_wrapper{
+    width: 100%;
+}
 
+.searchbar_wrapper{
+    width: 100%;
+    height: 50px;
+}
+
+.pokemon_list_content_wrapper{
+    position: relative;
+    height: 100%;
+}
+
+.allPokemonList{
+    height: 90%;
+}
 
 
 
